@@ -1,0 +1,3000 @@
+PS C:\WINDOWS\system32> terraform -version
+Terraform v0.12.24
+
+Your version of Terraform is out of date! The latest version
+is 0.12.28. You can update by downloading from https://www.terraform.io/downloads.html
+PS C:\WINDOWS\system32> terraform -version
+Terraform v0.12.28
+PS C:\WINDOWS\system32> cloud-tool-fr login
+
+Using default region from C:\Users\u6062896\cloudtoolfr_defaults
+
+MGMT Username (MGMT\MXXXXXXX): mgmt\m6062896
+MGMT Password:
+
+Please choose the role you would like to assume:
+[  0]: arn:aws:iam::003385304990:role/Customer_ReadOnly_Role
+[  1]: arn:aws:iam::003385304990:role/customer_tr_acm_role
+[  2]: arn:aws:iam::003385304990:role/customer_tr_tag_edit_role
+[  3]: arn:aws:iam::003977924856:role/Customer_ReadOnly_Role
+[  4]: arn:aws:iam::003977924856:role/customer_tr_acm_role
+[  5]: arn:aws:iam::003977924856:role/customer_tr_tag_edit_role
+[  6]: arn:aws:iam::008954398186:role/Customer_ReadOnly_Role
+[  7]: arn:aws:iam::008954398186:role/customer_tr_acm_role
+[  8]: arn:aws:iam::008954398186:role/customer_tr_tag_edit_role
+[  9]: arn:aws:iam::104007887976:role/Customer_ReadOnly_Role
+[ 10]: arn:aws:iam::104007887976:role/customer_tr_acm_role
+[ 11]: arn:aws:iam::104007887976:role/customer_tr_tag_edit_role
+[ 12]: arn:aws:iam::115447039350:role/Customer_ReadOnly_Role
+[ 13]: arn:aws:iam::115447039350:role/customer_tr_acm_role
+[ 14]: arn:aws:iam::115447039350:role/customer_tr_tag_edit_role
+[ 15]: arn:aws:iam::184450566042:role/Customer_ReadOnly_Role
+[ 16]: arn:aws:iam::184450566042:role/customer_tr_acm_role
+[ 17]: arn:aws:iam::184450566042:role/customer_tr_tag_edit_role
+[ 18]: arn:aws:iam::192480170148:role/Customer_ReadOnly_Role
+[ 19]: arn:aws:iam::192480170148:role/customer_tr_acm_role
+[ 20]: arn:aws:iam::192480170148:role/customer_tr_tag_edit_role
+[ 21]: arn:aws:iam::217158195230:role/Customer_ReadOnly_Role
+[ 22]: arn:aws:iam::217158195230:role/customer_tr_acm_role
+[ 23]: arn:aws:iam::217158195230:role/customer_tr_tag_edit_role
+[ 24]: arn:aws:iam::243235245419:role/Customer_ReadOnly_Role
+[ 25]: arn:aws:iam::243235245419:role/customer_tr_acm_role
+[ 26]: arn:aws:iam::243235245419:role/customer_tr_tag_edit_role
+[ 27]: arn:aws:iam::261952290908:role/Customer_ReadOnly_Role
+[ 28]: arn:aws:iam::261952290908:role/customer_tr_acm_role
+[ 29]: arn:aws:iam::261952290908:role/customer_tr_tag_edit_role
+[ 30]: arn:aws:iam::300234871130:role/Customer_ReadOnly_Role
+[ 31]: arn:aws:iam::300234871130:role/customer_tr_acm_role
+[ 32]: arn:aws:iam::300234871130:role/customer_tr_tag_edit_role
+[ 33]: arn:aws:iam::321669267301:role/Customer_ReadOnly_Role
+[ 34]: arn:aws:iam::321669267301:role/customer_tr_acm_role
+[ 35]: arn:aws:iam::321669267301:role/customer_tr_tag_edit_role
+[ 36]: arn:aws:iam::330227609852:role/Customer_ReadOnly_Role
+[ 37]: arn:aws:iam::330227609852:role/customer_tr_acm_role
+[ 38]: arn:aws:iam::330227609852:role/customer_tr_tag_edit_role
+[ 39]: arn:aws:iam::340725287140:role/Customer_ReadOnly_Role
+[ 40]: arn:aws:iam::340725287140:role/customer_tr_acm_role
+[ 41]: arn:aws:iam::340725287140:role/customer_tr_tag_edit_role
+[ 42]: arn:aws:iam::406235010725:role/Customer_ReadOnly_Role
+[ 43]: arn:aws:iam::406235010725:role/customer_tr_acm_role
+[ 44]: arn:aws:iam::406235010725:role/customer_tr_tag_edit_role
+[ 45]: arn:aws:iam::489786055067:role/Customer_ReadOnly_Role
+[ 46]: arn:aws:iam::489786055067:role/customer_tr_acm_role
+[ 47]: arn:aws:iam::489786055067:role/customer_tr_tag_edit_role
+[ 48]: arn:aws:iam::501119155552:role/Customer_ReadOnly_Role
+[ 49]: arn:aws:iam::501119155552:role/customer_tr_acm_role
+[ 50]: arn:aws:iam::501119155552:role/customer_tr_tag_edit_role
+[ 51]: arn:aws:iam::570395473198:role/Customer_ReadOnly_Role
+[ 52]: arn:aws:iam::570395473198:role/customer_tr_acm_role
+[ 53]: arn:aws:iam::570395473198:role/customer_tr_tag_edit_role
+[ 54]: arn:aws:iam::626984530538:role/Customer_ReadOnly_Role
+[ 55]: arn:aws:iam::626984530538:role/customer_tr_acm_role
+[ 56]: arn:aws:iam::626984530538:role/customer_tr_tag_edit_role
+[ 57]: arn:aws:iam::648727226388:role/Customer_ReadOnly_Role
+[ 58]: arn:aws:iam::648727226388:role/customer_tr_acm_role
+[ 59]: arn:aws:iam::648727226388:role/customer_tr_tag_edit_role
+[ 60]: arn:aws:iam::678142430771:role/Customer_ReadOnly_Role
+[ 61]: arn:aws:iam::678142430771:role/customer_tr_acm_role
+[ 62]: arn:aws:iam::678142430771:role/customer_tr_tag_edit_role
+[ 63]: arn:aws:iam::680932723449:role/Customer_ReadOnly_Role
+[ 64]: arn:aws:iam::680932723449:role/customer_tr_acm_role
+[ 65]: arn:aws:iam::680932723449:role/customer_tr_tag_edit_role
+[ 66]: arn:aws:iam::695290227745:role/Customer_ReadOnly_Role
+[ 67]: arn:aws:iam::695290227745:role/customer_tr_acm_role
+[ 68]: arn:aws:iam::695290227745:role/customer_tr_tag_edit_role
+[ 69]: arn:aws:iam::712241129152:role/Customer_ReadOnly_Role
+[ 70]: arn:aws:iam::712241129152:role/customer_tr_acm_role
+[ 71]: arn:aws:iam::712241129152:role/customer_tr_tag_edit_role
+[ 72]: arn:aws:iam::713112396884:role/Customer_ReadOnly_Role
+[ 73]: arn:aws:iam::713112396884:role/customer_tr_acm_role
+[ 74]: arn:aws:iam::713112396884:role/customer_tr_tag_edit_role
+[ 75]: arn:aws:iam::734564201250:role/Customer_ReadOnly_Role
+[ 76]: arn:aws:iam::734564201250:role/customer_tr_acm_role
+[ 77]: arn:aws:iam::734564201250:role/customer_tr_tag_edit_role
+[ 78]: arn:aws:iam::767440108047:role/Customer_ReadOnly_Role
+[ 79]: arn:aws:iam::767440108047:role/customer_tr_acm_role
+[ 80]: arn:aws:iam::767440108047:role/customer_tr_tag_edit_role
+[ 81]: arn:aws:iam::792311052870:role/Customer_ReadOnly_Role
+[ 82]: arn:aws:iam::792311052870:role/customer_tr_acm_role
+[ 83]: arn:aws:iam::792311052870:role/customer_tr_tag_edit_role
+[ 84]: arn:aws:iam::793936930182:role/Customer_ReadOnly_Role
+[ 85]: arn:aws:iam::793936930182:role/customer_tr_acm_role
+[ 86]: arn:aws:iam::793936930182:role/customer_tr_tag_edit_role
+[ 87]: arn:aws:iam::794268175483:role/Customer_ReadOnly_Role
+[ 88]: arn:aws:iam::794268175483:role/customer_tr_acm_role
+[ 89]: arn:aws:iam::794268175483:role/customer_tr_tag_edit_role
+[ 90]: arn:aws:iam::802514870113:role/Customer_ReadOnly_Role
+[ 91]: arn:aws:iam::802514870113:role/customer_tr_acm_role
+[ 92]: arn:aws:iam::802514870113:role/customer_tr_tag_edit_role
+[ 93]: arn:aws:iam::806938800372:role/Customer_ReadOnly_Role
+[ 94]: arn:aws:iam::806938800372:role/customer_tr_acm_role
+[ 95]: arn:aws:iam::806938800372:role/customer_tr_tag_edit_role
+[ 96]: arn:aws:iam::810837318106:role/Customer_ReadOnly_Role
+[ 97]: arn:aws:iam::810837318106:role/customer_tr_acm_role
+[ 98]: arn:aws:iam::810837318106:role/customer_tr_tag_edit_role
+[ 99]: arn:aws:iam::819160536339:role/Customer_ReadOnly_Role
+[100]: arn:aws:iam::819160536339:role/customer_tr_acm_role
+[101]: arn:aws:iam::819160536339:role/customer_tr_tag_edit_role
+[102]: arn:aws:iam::844135224604:role/Customer_ReadOnly_Role
+[103]: arn:aws:iam::844135224604:role/customer_tr_acm_role
+[104]: arn:aws:iam::844135224604:role/customer_tr_tag_edit_role
+[105]: arn:aws:iam::861026123833:role/Customer_ReadOnly_Role
+[106]: arn:aws:iam::861026123833:role/customer_tr_acm_role
+[107]: arn:aws:iam::861026123833:role/customer_tr_tag_edit_role
+[108]: arn:aws:iam::896730708523:role/Customer_ReadOnly_Role
+[109]: arn:aws:iam::896730708523:role/customer_tr_acm_role
+[110]: arn:aws:iam::896730708523:role/customer_tr_tag_edit_role
+[111]: arn:aws:iam::926331400020:role/Customer_ReadOnly_Role
+[112]: arn:aws:iam::926331400020:role/customer_tr_acm_role
+[113]: arn:aws:iam::926331400020:role/customer_tr_tag_edit_role
+[114]: arn:aws:iam::929307348169:role/Customer_ReadOnly_Role
+[115]: arn:aws:iam::929307348169:role/customer_tr_acm_role
+[116]: arn:aws:iam::929307348169:role/customer_tr_tag_edit_role
+[117]: arn:aws:iam::939679331353:role/Customer_ReadOnly_Role
+[118]: arn:aws:iam::939679331353:role/customer_tr_acm_role
+[119]: arn:aws:iam::939679331353:role/customer_tr_tag_edit_role
+[120]: arn:aws:iam::961814501377:role/Customer_ReadOnly_Role
+[121]: arn:aws:iam::961814501377:role/customer_tr_acm_role
+[122]: arn:aws:iam::961814501377:role/customer_tr_tag_edit_role
+[123]: arn:aws:iam::965578820099:role/Customer_ReadOnly_Role
+[124]: arn:aws:iam::965578820099:role/customer_tr_acm_role
+[125]: arn:aws:iam::965578820099:role/customer_tr_tag_edit_role
+[126]: arn:aws:iam::984681452733:role/Customer_ReadOnly_Role
+[127]: arn:aws:iam::984681452733:role/customer_tr_acm_role
+[128]: arn:aws:iam::984681452733:role/customer_tr_tag_edit_role
+[129]: dbcoe-sdlc-preprod (224599679546): human-role/206498-ReadOnly (Cloud DB COE)
+[130]: dbcoe-sdlc-preprod (224599679546): human-role/a206498-Developer (Cloud DB COE)
+[131]: ent-softbuild-sdlc-preprod (688779962684): human-role/a206339-Developer (Secure Development Platform)
+[132]: t1usage-sdlc-preprod (930925481740): human-role/a202068-Developer (T1 PLATFORMS - USAGE)
+[133]: tr-fr-preprod (608014515287): human-role/205490-ReadOnly (Eikon App DB - MongoDB in AWS)
+[134]: tr-fr-preprod (608014515287): human-role/a205490-Developer (Eikon App DB - MongoDB in AWS)
+[135]: worldcheckprivate-sdlc-prod (766156420970): human-role/a204837-Developer (Jenga)
+
+
+Role selection: 130
+
+----------------------------------------------------------------
+Your new access key pair has been stored in the AWS configuration file C:\Users\u6062896\.aws\credentials under the dbcoe-sdlc-preprod profile
+Note that it will expire at 2020-07-09 13:07:33+00:00.
+After this time you may safely rerun this script to refresh your access key pair.
+To use this credential call the AWS CLI with the --profile option (e.g. aws --profile dbcoe-sdlc-preprod ec2 describe-instances).
+----------------------------------------------------------------
+
+PS C:\WINDOWS\system32> cd C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform init
+
+Initializing provider plugins...
+- Checking for available provider plugins...
+- Downloading plugin for provider "aws" (hashicorp/aws) 2.69.0...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version = "~> 2.69"
+
+
+Warning: Skipping backend initialization pending configuration upgrade
+
+The root module configuration contains errors that may be fixed by running the
+configuration upgrade tool, so Terraform is skipping backend initialization.
+See below for more information.
+
+
+Warning: Interpolation-only expressions are deprecated
+
+  on main.tf line 3, in provider "aws":
+   3:   region  = "${var.region}"
+
+Terraform 0.11 and earlier required all non-constant expressions to be
+provided via interpolation syntax, but this pattern is now deprecated. To
+silence this warning, remove the "${ sequence from the start and the }"
+sequence from the end of this expression, leaving just the inner expression.
+
+Template interpolation syntax is still used to construct strings from
+expressions when the template includes multiple interpolation sequences or a
+mixture of literal strings and interpolations. This deprecation applies only
+to templates that consist entirely of a single interpolation sequence.
+
+(and 2 more similar warnings elsewhere)
+
+
+Warning: Quoted references are deprecated
+
+  on main.tf line 21, in resource "aws_db_instance" "mysqlmultiazinstance":
+  21:     provider = "aws.primary"
+
+In this context, references are expected literally rather than in quotes.
+Terraform 0.11 and earlier required quotes, but quoted references are now
+deprecated and will be removed in a future version of Terraform. Remove the
+quotes surrounding this reference to silence this warning.
+
+
+Warning: Quoted type constraints are deprecated
+
+  on variables.tf line 19, in variable "storage_type":
+  19:     type = "string"
+
+Terraform 0.11 and earlier required type constraints to be given in quotes,
+but that form is now deprecated and will be removed in a future version of
+Terraform. To silence this warning, remove the quotes around "string".
+
+(and 8 more similar warnings elsewhere)
+
+Error: Invalid legacy variable type hint
+
+
+  on variables.tf line 73, in variable "port":
+  73:     type = "number"
+
+The legacy variable type hint form, using a quoted string, allows only the
+values "string", "list", and "map". To provide a full type expression, remove
+the surrounding quotes and give the type expression directly.
+
+
+Terraform has initialized, but configuration upgrades may be needed.
+
+Terraform found syntax errors in the configuration that prevented full
+initialization. If you've recently upgraded to Terraform v0.12, this may be
+because your configuration uses syntax constructs that are no longer valid,
+and so must be updated before full initialization is possible.
+
+Terraform has installed the required providers to support the configuration
+upgrade process. To begin upgrading your configuration, run the following:
+    terraform 0.12upgrade
+
+To see the full set of errors that led to this message, run:
+    terraform validate
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version = "~> 2.69"
+
+
+Warning: Quoted type constraints are deprecated
+
+  on variables.tf line 84, in variable "tags":
+  84:     type = "map"
+
+Terraform 0.11 and earlier required type constraints to be given in quotes,
+but that form is now deprecated and will be removed in a future version of
+Terraform. To silence this warning, remove the quotes around "map" and write
+map(string) instead to explicitly indicate that the map elements are strings.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan
+var.location
+  Enter a value: eu-west-1
+
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+Warning: Quoted type constraints are deprecated
+
+  on variables.tf line 84, in variable "tags":
+  84:     type = "map"
+
+Terraform 0.11 and earlier required type constraints to be given in quotes,
+but that form is now deprecated and will be removed in a future version of
+Terraform. To silence this warning, remove the quotes around "map" and write
+map(string) instead to explicitly indicate that the map elements are strings.
+
+
+Error: No valid credential sources found for AWS Provider.
+        Please see https://terraform.io/docs/providers/aws/index.html for more information on
+        providing credentials for the AWS Provider
+
+  on main.tf line 6, in provider "aws":
+   6: provider "aws" {
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan
+var.location
+  Enter a value: eu-west-1
+
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+Warning: Quoted type constraints are deprecated
+
+  on variables.tf line 84, in variable "tags":
+  84:     type = "map"
+
+Terraform 0.11 and earlier required type constraints to be given in quotes,
+but that form is now deprecated and will be removed in a future version of
+Terraform. To silence this warning, remove the quotes around "map" and write
+map(string) instead to explicitly indicate that the map elements are strings.
+
+
+Error: "identifier" cannot contain two consecutive hyphens
+
+  on main.tf line 18, in resource "aws_db_instance" "mysqlmultiazinstance":
+  18: resource "aws_db_instance" "mysqlmultiazinstance" {
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan
+var.location
+  Enter a value: eu-west-1
+
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be created
+  + resource "aws_db_instance" "mysqlmultiazinstance" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = (known after apply)
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "mysql"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstance"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = (known after apply)
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Warning: Quoted type constraints are deprecated
+
+  on variables.tf line 84, in variable "tags":
+  84:     type = "map"
+
+Terraform 0.11 and earlier required type constraints to be given in quotes,
+but that form is now deprecated and will be removed in a future version of
+Terraform. To silence this warning, remove the quotes around "map" and write
+map(string) instead to explicitly indicate that the map elements are strings.
+
+
+------------------------------------------------------------------------
+
+Note: You didn't specify an "-out" parameter to save this plan, so Terraform
+can't guarantee that exactly these actions will be performed if
+"terraform apply" is subsequently run.
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan -out
+Usage: terraform plan [options] [DIR]
+
+  Generates an execution plan for Terraform.
+
+  This execution plan can be reviewed prior to running apply to get a
+  sense for what Terraform will do. Optionally, the plan can be saved to
+  a Terraform plan file, and apply can take this plan file to execute
+  this plan exactly.
+
+Options:
+
+  -compact-warnings   If Terraform produces any warnings that are not
+                      accompanied by errors, show them in a more compact form
+                      that includes only the summary messages.
+
+  -destroy            If set, a plan will be generated to destroy all resources
+                      managed by the given configuration and state.
+
+  -detailed-exitcode  Return detailed exit codes when the command exits. This
+                      will change the meaning of exit codes to:
+                      0 - Succeeded, diff is empty (no changes)
+                      1 - Errored
+                      2 - Succeeded, there is a diff
+
+  -input=true         Ask for input for variables if not directly set.
+
+  -lock=true          Lock the state file when locking is supported.
+
+  -lock-timeout=0s    Duration to retry a state lock.
+
+  -no-color           If specified, output won't contain any color.
+
+  -out=path           Write a plan file to the given path. This can be used as
+                      input to the "apply" command.
+
+  -parallelism=n      Limit the number of concurrent operations. Defaults to 10.
+
+  -refresh=true       Update state prior to checking for differences.
+
+  -state=statefile    Path to a Terraform state file to use to look
+                      up Terraform-managed resources. By default it will
+                      use the state "terraform.tfstate" if it exists.
+
+  -target=resource    Resource to target. Operation will be limited to this
+                      resource and its dependencies. This flag can be used
+                      multiple times.
+
+  -var 'foo=bar'      Set a variable in the Terraform configuration. This
+                      flag can be set multiple times.
+
+  -var-file=foo       Set variables in the Terraform configuration from
+                      a file. If "terraform.tfvars" or any ".auto.tfvars"
+                      files are present, they will be automatically loaded.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan -out=newplan
+var.location
+  Enter a value:
+Interrupt received.
+Please wait for Terraform to exit or data loss may occur.
+Gracefully shutting down...
+
+Warning: Quoted type constraints are deprecated
+
+  on variables.tf line 84, in variable "tags":
+  84:     type = "map"
+
+Terraform 0.11 and earlier required type constraints to be given in quotes,
+but that form is now deprecated and will be removed in a future version of
+Terraform. To silence this warning, remove the quotes around "map" and write
+map(string) instead to explicitly indicate that the map elements are strings.
+
+
+Error: Reference to undeclared resource
+
+  on output.tf line 2, in output "endpoint":
+   2:   value = aws_db_instance.identifier.endpoint
+
+A managed resource "aws_db_instance" "identifier" has not been declared in the
+root module.
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan -out=newplan
+
+Warning: Quoted type constraints are deprecated
+
+  on variables.tf line 82, in variable "tags":
+  82:     type = "map"
+
+Terraform 0.11 and earlier required type constraints to be given in quotes,
+but that form is now deprecated and will be removed in a future version of
+Terraform. To silence this warning, remove the quotes around "map" and write
+map(string) instead to explicitly indicate that the map elements are strings.
+
+
+Error: Reference to undeclared resource
+
+  on output.tf line 2, in output "endpoint":
+   2:   value = aws_db_instance.identifier.endpoint
+
+A managed resource "aws_db_instance" "identifier" has not been declared in the
+root module.
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan -out=newplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be created
+  + resource "aws_db_instance" "mysqlmultiazinstance" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = (known after apply)
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "mysql"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstance"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Warning: Quoted type constraints are deprecated
+
+  on variables.tf line 82, in variable "tags":
+  82:     type = "map"
+
+Terraform 0.11 and earlier required type constraints to be given in quotes,
+but that form is now deprecated and will be removed in a future version of
+Terraform. To silence this warning, remove the quotes around "map" and write
+map(string) instead to explicitly indicate that the map elements are strings.
+
+
+------------------------------------------------------------------------
+
+This plan was saved to: newplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan -out=newplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be created
+  + resource "aws_db_instance" "mysqlmultiazinstance" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = (known after apply)
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "mysql"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstance"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform apply .\newplan
+aws_db_instance.mysqlmultiazinstance: Creating...
+
+Error: Error creating DB Instance: InvalidParameterCombination: Cannot find version mysql for mysql
+        status code: 400, request id: 3d074fdd-a0c6-44f2-ada4-6a33f591f87f
+
+  on main.tf line 18, in resource "aws_db_instance" "mysqlmultiazinstance":
+  18: resource "aws_db_instance" "mysqlmultiazinstance" {
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan -out=newplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be created
+  + resource "aws_db_instance" "mysqlmultiazinstance" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = (known after apply)
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "mysql"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstance"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform apply .\newplan
+aws_db_instance.mysqlmultiazinstance: Creating...
+
+Error: Error creating DB Instance: InvalidParameterCombination: Cannot find version mysql for mysql
+        status code: 400, request id: 9cd04c04-10df-4bca-b095-3c3532a5adfd
+
+  on main.tf line 18, in resource "aws_db_instance" "mysqlmultiazinstance":
+  18: resource "aws_db_instance" "mysqlmultiazinstance" {
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan -out=newplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be created
+  + resource "aws_db_instance" "mysqlmultiazinstance" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = (known after apply)
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "5.7"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstance"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform apply .\newplan
+aws_db_instance.mysqlmultiazinstance: Creating...
+aws_db_instance.mysqlmultiazinstance: Still creating... [10s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [20s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [31s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [41s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [51s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [1m1s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [1m11s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [1m21s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [1m31s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [1m41s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [1m51s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [2m1s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [2m11s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [2m21s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [2m32s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [2m42s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [2m52s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [3m2s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [3m12s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [3m22s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [3m32s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [3m42s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [3m52s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [4m2s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [4m12s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [4m22s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [4m32s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [4m42s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [4m52s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [5m2s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [5m13s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [5m23s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [5m33s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [5m43s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [5m53s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [6m3s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [6m13s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [6m23s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [6m34s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [6m44s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [6m54s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [7m4s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [7m14s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [7m24s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [7m34s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [7m44s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [7m54s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [8m4s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [8m14s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [8m24s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [8m35s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [8m45s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [8m55s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [9m5s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [9m15s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [9m25s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [9m35s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [9m45s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [9m55s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [10m5s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [10m15s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [10m25s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [10m35s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [10m46s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [10m56s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [11m6s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [11m16s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [11m26s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [11m36s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still creating... [11m46s elapsed]
+aws_db_instance.mysqlmultiazinstance: Creation complete after 11m52s [id=a206498-coe-mysqlmultiazinstance]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
+
+Outputs:
+
+endpoint = a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com:3306
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> aws descript-db-instances
+usage: aws [options] <command> <subcommand> [<subcommand> ...] [parameters]
+To see help text, you can run:
+
+  aws help
+  aws <command> help
+  aws <command> <subcommand> help
+aws: error: argument command: Invalid choice, valid choices are:
+
+accessanalyzer                           | acm
+acm-pca                                  | alexaforbusiness
+amplify                                  | apigateway
+apigatewaymanagementapi                  | apigatewayv2
+appconfig                                | application-autoscaling
+application-insights                     | appmesh
+appstream                                | appsync
+athena                                   | autoscaling
+autoscaling-plans                        | backup
+batch                                    | budgets
+ce                                       | chime
+cloud9                                   | clouddirectory
+cloudformation                           | cloudfront
+cloudhsm                                 | cloudhsmv2
+cloudsearch                              | cloudsearchdomain
+cloudtrail                               | cloudwatch
+codeartifact                             | codebuild
+codecommit                               | codeguru-reviewer
+codeguruprofiler                         | codepipeline
+codestar                                 | codestar-connections
+codestar-notifications                   | cognito-identity
+cognito-idp                              | cognito-sync
+comprehend                               | comprehendmedical
+compute-optimizer                        | connect
+connectparticipant                       | cur
+dataexchange                             | datapipeline
+datasync                                 | dax
+detective                                | devicefarm
+directconnect                            | discovery
+dlm                                      | dms
+docdb                                    | ds
+dynamodb                                 | dynamodbstreams
+ebs                                      | ec2
+ec2-instance-connect                     | ecr
+ecs                                      | efs
+eks                                      | elastic-inference
+elasticache                              | elasticbeanstalk
+elastictranscoder                        | elb
+elbv2                                    | emr
+es                                       | events
+firehose                                 | fms
+forecast                                 | forecastquery
+frauddetector                            | fsx
+gamelift                                 | glacier
+globalaccelerator                        | glue
+greengrass                               | groundstation
+guardduty                                | health
+iam                                      | imagebuilder
+importexport                             | inspector
+iot                                      | iot-data
+iot-jobs-data                            | iot1click-devices
+iot1click-projects                       | iotanalytics
+iotevents                                | iotevents-data
+iotsecuretunneling                       | iotsitewise
+iotthingsgraph                           | kafka
+kendra                                   | kinesis
+kinesis-video-archived-media             | kinesis-video-media
+kinesis-video-signaling                  | kinesisanalytics
+kinesisanalyticsv2                       | kinesisvideo
+kms                                      | lakeformation
+lambda                                   | lex-models
+lex-runtime                              | license-manager
+lightsail                                | logs
+machinelearning                          | macie
+macie2                                   | managedblockchain
+marketplace-catalog                      | marketplace-entitlement
+marketplacecommerceanalytics             | mediaconnect
+mediaconvert                             | medialive
+mediapackage                             | mediapackage-vod
+mediastore                               | mediastore-data
+mediatailor                              | meteringmarketplace
+mgh                                      | migrationhub-config
+mobile                                   | mq
+mturk                                    | neptune
+networkmanager                           | opsworks
+opsworkscm                               | organizations
+outposts                                 | personalize
+personalize-events                       | personalize-runtime
+pi                                       | pinpoint
+pinpoint-email                           | pinpoint-sms-voice
+polly                                    | pricing
+qldb                                     | qldb-session
+quicksight                               | ram
+rds                                      | rds-data
+redshift                                 | rekognition
+resource-groups                          | resourcegroupstaggingapi
+robomaker                                | route53
+route53domains                           | route53resolver
+s3control                                | sagemaker
+sagemaker-a2i-runtime                    | sagemaker-runtime
+savingsplans                             | schemas
+sdb                                      | secretsmanager
+securityhub                              | serverlessrepo
+service-quotas                           | servicecatalog
+servicediscovery                         | ses
+sesv2                                    | shield
+signer                                   | sms
+snowball                                 | sns
+sqs                                      | ssm
+sso                                      | sso-oidc
+stepfunctions                            | storagegateway
+sts                                      | support
+swf                                      | synthetics
+textract                                 | transcribe
+transfer                                 | translate
+waf                                      | waf-regional
+wafv2                                    | workdocs
+worklink                                 | workmail
+workmailmessageflow                      | workspaces
+xray                                     | s3api
+s3                                       | ddb
+configure                                | deploy
+configservice                            | opsworks-cm
+history                                  | cli-dev
+help
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> cd..
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform> cd .\tf-mysql-multiaz-readreplica\
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan -outnewreadreplicaplan
+Usage: terraform plan [options] [DIR]
+
+  Generates an execution plan for Terraform.
+
+  This execution plan can be reviewed prior to running apply to get a
+  sense for what Terraform will do. Optionally, the plan can be saved to
+  a Terraform plan file, and apply can take this plan file to execute
+  this plan exactly.
+
+Options:
+
+  -compact-warnings   If Terraform produces any warnings that are not
+                      accompanied by errors, show them in a more compact form
+                      that includes only the summary messages.
+
+  -destroy            If set, a plan will be generated to destroy all resources
+                      managed by the given configuration and state.
+
+  -detailed-exitcode  Return detailed exit codes when the command exits. This
+                      will change the meaning of exit codes to:
+                      0 - Succeeded, diff is empty (no changes)
+                      1 - Errored
+                      2 - Succeeded, there is a diff
+
+  -input=true         Ask for input for variables if not directly set.
+
+  -lock=true          Lock the state file when locking is supported.
+
+  -lock-timeout=0s    Duration to retry a state lock.
+
+  -no-color           If specified, output won't contain any color.
+
+  -out=path           Write a plan file to the given path. This can be used as
+                      input to the "apply" command.
+
+  -parallelism=n      Limit the number of concurrent operations. Defaults to 10.
+
+  -refresh=true       Update state prior to checking for differences.
+
+  -state=statefile    Path to a Terraform state file to use to look
+                      up Terraform-managed resources. By default it will
+                      use the state "terraform.tfstate" if it exists.
+
+  -target=resource    Resource to target. Operation will be limited to this
+                      resource and its dependencies. This flag can be used
+                      multiple times.
+
+  -var 'foo=bar'      Set a variable in the Terraform configuration. This
+                      flag can be set multiple times.
+
+  -var-file=foo       Set variables in the Terraform configuration from
+                      a file. If "terraform.tfvars" or any ".auto.tfvars"
+                      files are present, they will be automatically loaded.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan -out=newreadreplicaplan
+
+Error: Could not satisfy plugin requirements
+
+
+Plugin reinitialization required. Please run "terraform init".
+
+Plugins are external binaries that Terraform uses to access and manipulate
+resources. The configuration provided requires plugins which can't be located,
+don't satisfy the version constraints, or are otherwise incompatible.
+
+Terraform automatically discovers provider requirements from your
+configuration, including providers used in child modules. To see the
+requirements and constraints from each module, run "terraform providers".
+
+
+
+Error: provider.aws: no suitable version installed
+  version requirements: "(any version)"
+  versions installed: none
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Checking for available provider plugins...
+- Downloading plugin for provider "aws" (hashicorp/aws) 2.69.0...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version = "~> 2.69"
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan -out=newreadreplicaplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be created
+  + resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = (known after apply)
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "5.7"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newreadreplicaplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newreadreplicaplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform apply .\newreadreplicaplan
+aws_db_instance.mysqlmultiazinstancereadreplica: Creating...
+
+Error: Error creating DB Instance: InvalidDBInstanceState: Automated backups are not enabled for this database instance. To enable automated backups, use ModifyDBInstance to set the backup retention period to a non-zero value.
+        status code: 400, request id: 056e1429-a1fe-4c5e-8702-9858df65f9f5
+
+  on main.tf line 18, in resource "aws_db_instance" "mysqlmultiazinstancereadreplica":
+  18: resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> cd..
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform> cd .\tf-mysql-multiaz\
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version = "~> 2.69"
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan -out=newbkpupdate
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+aws_db_instance.mysqlmultiazinstance: Refreshing state... [id=a206498-coe-mysqlmultiazinstance]
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be updated in-place
+  ~ resource "aws_db_instance" "mysqlmultiazinstance" {
+        address                               = "a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com"
+        allocated_storage                     = 20
+        arn                                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+        auto_minor_version_upgrade            = true
+        availability_zone                     = "eu-west-1a"
+      ~ backup_retention_period               = 0 -> 2
+        backup_window                         = "23:04-23:34"
+        ca_cert_identifier                    = "rds-ca-2019"
+        copy_tags_to_snapshot                 = false
+        db_subnet_group_name                  = "default"
+        delete_automated_backups              = true
+        deletion_protection                   = false
+        enabled_cloudwatch_logs_exports       = []
+        endpoint                              = "a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com:3306"
+        engine                                = "mysql"
+        engine_version                        = "5.7.26"
+        hosted_zone_id                        = "Z29XKXDKYMONMX"
+        iam_database_authentication_enabled   = false
+        id                                    = "a206498-coe-mysqlmultiazinstance"
+        identifier                            = "a206498-coe-mysqlmultiazinstance"
+        instance_class                        = "db.m5.xlarge"
+        iops                                  = 0
+        license_model                         = "general-public-license"
+        maintenance_window                    = "wed:22:30-wed:23:00"
+        max_allocated_storage                 = 0
+        monitoring_interval                   = 0
+        multi_az                              = true
+        name                                  = "mydb"
+        option_group_name                     = "default:mysql-5-7"
+        parameter_group_name                  = "default.mysql5.7"
+        password                              = (sensitive value)
+        performance_insights_enabled          = false
+        performance_insights_retention_period = 0
+        port                                  = 3306
+        publicly_accessible                   = false
+        replicas                              = []
+        resource_id                           = "db-P54LXMQXRUQGFLXQCCSCIEOA7Q"
+        security_group_names                  = []
+        skip_final_snapshot                   = false
+        status                                = "available"
+        storage_encrypted                     = false
+        storage_type                          = "gp2"
+        tags                                  = {}
+        username                              = "admin"
+        vpc_security_group_ids                = [
+            "sg-ecc895ac",
+        ]
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newbkpupdate
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newbkpupdate"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform apply .\newbkpupdate
+aws_db_instance.mysqlmultiazinstance: Modifying... [id=a206498-coe-mysqlmultiazinstance]
+aws_db_instance.mysqlmultiazinstance: Still modifying... [id=a206498-coe-mysqlmultiazinstance, 10s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still modifying... [id=a206498-coe-mysqlmultiazinstance, 20s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still modifying... [id=a206498-coe-mysqlmultiazinstance, 30s elapsed]
+aws_db_instance.mysqlmultiazinstance: Modifications complete after 39s [id=a206498-coe-mysqlmultiazinstance]
+
+Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
+
+Outputs:
+
+endpoint = a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com:3306
+secondaryarn = arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> cd..
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform> cd .\tf-mysql-multiaz-readreplica\
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version = "~> 2.69"
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan -out=newreadreplicaplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+Interrupt received.
+Please wait for Terraform to exit or data loss may occur.
+Gracefully shutting down...
+Stopping operation...
+Two interrupts received. Exiting immediately. Note that data
+loss may have occurred.
+
+Error: operation canceled
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> cloud-tool-fr
+usage: cloud-tool-fr [-h] [-r REGION] [-p PROFILE] [-a AWSCONFIGPATH]
+                     [-d AWSCREDENTIALSFILENAME] [-g AWSCONFIGFILENAME] [-V]
+                     [-v] [-vv] [-vvv]
+                     {configure,clear-defaults,login,vault-login,bastion-get-key,list-instances,ssh,check-updates,clear-stored-password,view-config,ssh-tunnel}
+                     ...
+cloud-tool-fr: error: too few arguments
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> cloud-tool-fr login
+
+Using default region from C:\Users\u6062896\cloudtoolfr_defaults
+
+MGMT Username (MGMT\MXXXXXXX): mgmt\m6062896
+MGMT Password:
+
+Please choose the role you would like to assume:
+[  0]: arn:aws:iam::003385304990:role/Customer_ReadOnly_Role
+[  1]: arn:aws:iam::003385304990:role/customer_tr_acm_role
+[  2]: arn:aws:iam::003385304990:role/customer_tr_tag_edit_role
+[  3]: arn:aws:iam::003977924856:role/Customer_ReadOnly_Role
+[  4]: arn:aws:iam::003977924856:role/customer_tr_acm_role
+[  5]: arn:aws:iam::003977924856:role/customer_tr_tag_edit_role
+[  6]: arn:aws:iam::008954398186:role/Customer_ReadOnly_Role
+[  7]: arn:aws:iam::008954398186:role/customer_tr_acm_role
+[  8]: arn:aws:iam::008954398186:role/customer_tr_tag_edit_role
+[  9]: arn:aws:iam::104007887976:role/Customer_ReadOnly_Role
+[ 10]: arn:aws:iam::104007887976:role/customer_tr_acm_role
+[ 11]: arn:aws:iam::104007887976:role/customer_tr_tag_edit_role
+[ 12]: arn:aws:iam::115447039350:role/Customer_ReadOnly_Role
+[ 13]: arn:aws:iam::115447039350:role/customer_tr_acm_role
+[ 14]: arn:aws:iam::115447039350:role/customer_tr_tag_edit_role
+[ 15]: arn:aws:iam::184450566042:role/Customer_ReadOnly_Role
+[ 16]: arn:aws:iam::184450566042:role/customer_tr_acm_role
+[ 17]: arn:aws:iam::184450566042:role/customer_tr_tag_edit_role
+[ 18]: arn:aws:iam::192480170148:role/Customer_ReadOnly_Role
+[ 19]: arn:aws:iam::192480170148:role/customer_tr_acm_role
+[ 20]: arn:aws:iam::192480170148:role/customer_tr_tag_edit_role
+[ 21]: arn:aws:iam::217158195230:role/Customer_ReadOnly_Role
+[ 22]: arn:aws:iam::217158195230:role/customer_tr_acm_role
+[ 23]: arn:aws:iam::217158195230:role/customer_tr_tag_edit_role
+[ 24]: arn:aws:iam::243235245419:role/Customer_ReadOnly_Role
+[ 25]: arn:aws:iam::243235245419:role/customer_tr_acm_role
+[ 26]: arn:aws:iam::243235245419:role/customer_tr_tag_edit_role
+[ 27]: arn:aws:iam::261952290908:role/Customer_ReadOnly_Role
+[ 28]: arn:aws:iam::261952290908:role/customer_tr_acm_role
+[ 29]: arn:aws:iam::261952290908:role/customer_tr_tag_edit_role
+[ 30]: arn:aws:iam::300234871130:role/Customer_ReadOnly_Role
+[ 31]: arn:aws:iam::300234871130:role/customer_tr_acm_role
+[ 32]: arn:aws:iam::300234871130:role/customer_tr_tag_edit_role
+[ 33]: arn:aws:iam::321669267301:role/Customer_ReadOnly_Role
+[ 34]: arn:aws:iam::321669267301:role/customer_tr_acm_role
+[ 35]: arn:aws:iam::321669267301:role/customer_tr_tag_edit_role
+[ 36]: arn:aws:iam::330227609852:role/Customer_ReadOnly_Role
+[ 37]: arn:aws:iam::330227609852:role/customer_tr_acm_role
+[ 38]: arn:aws:iam::330227609852:role/customer_tr_tag_edit_role
+[ 39]: arn:aws:iam::340725287140:role/Customer_ReadOnly_Role
+[ 40]: arn:aws:iam::340725287140:role/customer_tr_acm_role
+[ 41]: arn:aws:iam::340725287140:role/customer_tr_tag_edit_role
+[ 42]: arn:aws:iam::406235010725:role/Customer_ReadOnly_Role
+[ 43]: arn:aws:iam::406235010725:role/customer_tr_acm_role
+[ 44]: arn:aws:iam::406235010725:role/customer_tr_tag_edit_role
+[ 45]: arn:aws:iam::489786055067:role/Customer_ReadOnly_Role
+[ 46]: arn:aws:iam::489786055067:role/customer_tr_acm_role
+[ 47]: arn:aws:iam::489786055067:role/customer_tr_tag_edit_role
+[ 48]: arn:aws:iam::501119155552:role/Customer_ReadOnly_Role
+[ 49]: arn:aws:iam::501119155552:role/customer_tr_acm_role
+[ 50]: arn:aws:iam::501119155552:role/customer_tr_tag_edit_role
+[ 51]: arn:aws:iam::570395473198:role/Customer_ReadOnly_Role
+[ 52]: arn:aws:iam::570395473198:role/customer_tr_acm_role
+[ 53]: arn:aws:iam::570395473198:role/customer_tr_tag_edit_role
+[ 54]: arn:aws:iam::626984530538:role/Customer_ReadOnly_Role
+[ 55]: arn:aws:iam::626984530538:role/customer_tr_acm_role
+[ 56]: arn:aws:iam::626984530538:role/customer_tr_tag_edit_role
+[ 57]: arn:aws:iam::648727226388:role/Customer_ReadOnly_Role
+[ 58]: arn:aws:iam::648727226388:role/customer_tr_acm_role
+[ 59]: arn:aws:iam::648727226388:role/customer_tr_tag_edit_role
+[ 60]: arn:aws:iam::678142430771:role/Customer_ReadOnly_Role
+[ 61]: arn:aws:iam::678142430771:role/customer_tr_acm_role
+[ 62]: arn:aws:iam::678142430771:role/customer_tr_tag_edit_role
+[ 63]: arn:aws:iam::680932723449:role/Customer_ReadOnly_Role
+[ 64]: arn:aws:iam::680932723449:role/customer_tr_acm_role
+[ 65]: arn:aws:iam::680932723449:role/customer_tr_tag_edit_role
+[ 66]: arn:aws:iam::695290227745:role/Customer_ReadOnly_Role
+[ 67]: arn:aws:iam::695290227745:role/customer_tr_acm_role
+[ 68]: arn:aws:iam::695290227745:role/customer_tr_tag_edit_role
+[ 69]: arn:aws:iam::712241129152:role/Customer_ReadOnly_Role
+[ 70]: arn:aws:iam::712241129152:role/customer_tr_acm_role
+[ 71]: arn:aws:iam::712241129152:role/customer_tr_tag_edit_role
+[ 72]: arn:aws:iam::713112396884:role/Customer_ReadOnly_Role
+[ 73]: arn:aws:iam::713112396884:role/customer_tr_acm_role
+[ 74]: arn:aws:iam::713112396884:role/customer_tr_tag_edit_role
+[ 75]: arn:aws:iam::734564201250:role/Customer_ReadOnly_Role
+[ 76]: arn:aws:iam::734564201250:role/customer_tr_acm_role
+[ 77]: arn:aws:iam::734564201250:role/customer_tr_tag_edit_role
+[ 78]: arn:aws:iam::767440108047:role/Customer_ReadOnly_Role
+[ 79]: arn:aws:iam::767440108047:role/customer_tr_acm_role
+[ 80]: arn:aws:iam::767440108047:role/customer_tr_tag_edit_role
+[ 81]: arn:aws:iam::792311052870:role/Customer_ReadOnly_Role
+[ 82]: arn:aws:iam::792311052870:role/customer_tr_acm_role
+[ 83]: arn:aws:iam::792311052870:role/customer_tr_tag_edit_role
+[ 84]: arn:aws:iam::793936930182:role/Customer_ReadOnly_Role
+[ 85]: arn:aws:iam::793936930182:role/customer_tr_acm_role
+[ 86]: arn:aws:iam::793936930182:role/customer_tr_tag_edit_role
+[ 87]: arn:aws:iam::794268175483:role/Customer_ReadOnly_Role
+[ 88]: arn:aws:iam::794268175483:role/customer_tr_acm_role
+[ 89]: arn:aws:iam::794268175483:role/customer_tr_tag_edit_role
+[ 90]: arn:aws:iam::802514870113:role/Customer_ReadOnly_Role
+[ 91]: arn:aws:iam::802514870113:role/customer_tr_acm_role
+[ 92]: arn:aws:iam::802514870113:role/customer_tr_tag_edit_role
+[ 93]: arn:aws:iam::806938800372:role/Customer_ReadOnly_Role
+[ 94]: arn:aws:iam::806938800372:role/customer_tr_acm_role
+[ 95]: arn:aws:iam::806938800372:role/customer_tr_tag_edit_role
+[ 96]: arn:aws:iam::810837318106:role/Customer_ReadOnly_Role
+[ 97]: arn:aws:iam::810837318106:role/customer_tr_acm_role
+[ 98]: arn:aws:iam::810837318106:role/customer_tr_tag_edit_role
+[ 99]: arn:aws:iam::819160536339:role/Customer_ReadOnly_Role
+[100]: arn:aws:iam::819160536339:role/customer_tr_acm_role
+[101]: arn:aws:iam::819160536339:role/customer_tr_tag_edit_role
+[102]: arn:aws:iam::844135224604:role/Customer_ReadOnly_Role
+[103]: arn:aws:iam::844135224604:role/customer_tr_acm_role
+[104]: arn:aws:iam::844135224604:role/customer_tr_tag_edit_role
+[105]: arn:aws:iam::861026123833:role/Customer_ReadOnly_Role
+[106]: arn:aws:iam::861026123833:role/customer_tr_acm_role
+[107]: arn:aws:iam::861026123833:role/customer_tr_tag_edit_role
+[108]: arn:aws:iam::896730708523:role/Customer_ReadOnly_Role
+[109]: arn:aws:iam::896730708523:role/customer_tr_acm_role
+[110]: arn:aws:iam::896730708523:role/customer_tr_tag_edit_role
+[111]: arn:aws:iam::926331400020:role/Customer_ReadOnly_Role
+[112]: arn:aws:iam::926331400020:role/customer_tr_acm_role
+[113]: arn:aws:iam::926331400020:role/customer_tr_tag_edit_role
+[114]: arn:aws:iam::929307348169:role/Customer_ReadOnly_Role
+[115]: arn:aws:iam::929307348169:role/customer_tr_acm_role
+[116]: arn:aws:iam::929307348169:role/customer_tr_tag_edit_role
+[117]: arn:aws:iam::939679331353:role/Customer_ReadOnly_Role
+[118]: arn:aws:iam::939679331353:role/customer_tr_acm_role
+[119]: arn:aws:iam::939679331353:role/customer_tr_tag_edit_role
+[120]: arn:aws:iam::961814501377:role/Customer_ReadOnly_Role
+[121]: arn:aws:iam::961814501377:role/customer_tr_acm_role
+[122]: arn:aws:iam::961814501377:role/customer_tr_tag_edit_role
+[123]: arn:aws:iam::965578820099:role/Customer_ReadOnly_Role
+[124]: arn:aws:iam::965578820099:role/customer_tr_acm_role
+[125]: arn:aws:iam::965578820099:role/customer_tr_tag_edit_role
+[126]: arn:aws:iam::984681452733:role/Customer_ReadOnly_Role
+[127]: arn:aws:iam::984681452733:role/customer_tr_acm_role
+[128]: arn:aws:iam::984681452733:role/customer_tr_tag_edit_role
+[129]: dbcoe-sdlc-preprod (224599679546): human-role/206498-ReadOnly (Cloud DB COE)
+[130]: dbcoe-sdlc-preprod (224599679546): human-role/a206498-Developer (Cloud DB COE)
+[131]: ent-softbuild-sdlc-preprod (688779962684): human-role/a206339-Developer (Secure Development Platform)
+[132]: t1usage-sdlc-preprod (930925481740): human-role/a202068-Developer (T1 PLATFORMS - USAGE)
+[133]: tr-fr-preprod (608014515287): human-role/205490-ReadOnly (Eikon App DB - MongoDB in AWS)
+[134]: tr-fr-preprod (608014515287): human-role/a205490-Developer (Eikon App DB - MongoDB in AWS)
+[135]: worldcheckprivate-sdlc-prod (766156420970): human-role/a204837-Developer (Jenga)
+
+
+Role selection: 130
+
+----------------------------------------------------------------
+Your new access key pair has been stored in the AWS configuration file C:\Users\u6062896\.aws\credentials under the dbcoe-sdlc-preprod profile
+Note that it will expire at 2020-07-09 14:17:42+00:00.
+After this time you may safely rerun this script to refresh your access key pair.
+To use this credential call the AWS CLI with the --profile option (e.g. aws --profile dbcoe-sdlc-preprod ec2 describe-instances).
+----------------------------------------------------------------
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version = "~> 2.69"
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan -out=newreadreplicaplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be created
+  + resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = (known after apply)
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "5.7"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newreadreplicaplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newreadreplicaplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform apply .\newreadreplicaplan
+aws_db_instance.mysqlmultiazinstancereadreplica: Creating...
+
+Error: Error creating DB Instance: InvalidDBInstanceState: Automated backups are not enabled for this database instance. To enable automated backups, use ModifyDBInstance to set the backup retention period to a non-zero value.
+        status code: 400, request id: cbe1e47e-31ec-4284-b2c8-6026ee870b77
+
+  on main.tf line 18, in resource "aws_db_instance" "mysqlmultiazinstancereadreplica":
+  18: resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan -out=newreadreplicaplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be created
+  + resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = 2
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "5.7"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newreadreplicaplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newreadreplicaplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan -out=newreadreplicaplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be created
+  + resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = 2
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "5.7"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newreadreplicaplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newreadreplicaplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan -out=newreadreplicaplan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be created
+  + resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+      + address                               = (known after apply)
+      + allocated_storage                     = 20
+      + apply_immediately                     = (known after apply)
+      + arn                                   = (known after apply)
+      + auto_minor_version_upgrade            = true
+      + availability_zone                     = (known after apply)
+      + backup_retention_period               = 2
+      + backup_window                         = (known after apply)
+      + ca_cert_identifier                    = (known after apply)
+      + character_set_name                    = (known after apply)
+      + copy_tags_to_snapshot                 = false
+      + db_subnet_group_name                  = (known after apply)
+      + delete_automated_backups              = true
+      + endpoint                              = (known after apply)
+      + engine                                = "mysql"
+      + engine_version                        = "5.7"
+      + hosted_zone_id                        = (known after apply)
+      + id                                    = (known after apply)
+      + identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica"
+      + identifier_prefix                     = (known after apply)
+      + instance_class                        = "db.m5.xlarge"
+      + kms_key_id                            = (known after apply)
+      + license_model                         = (known after apply)
+      + maintenance_window                    = (known after apply)
+      + monitoring_interval                   = 0
+      + monitoring_role_arn                   = (known after apply)
+      + multi_az                              = true
+      + name                                  = "mydb"
+      + option_group_name                     = (known after apply)
+      + parameter_group_name                  = "default.mysql5.7"
+      + password                              = (sensitive value)
+      + performance_insights_enabled          = false
+      + performance_insights_kms_key_id       = (known after apply)
+      + performance_insights_retention_period = (known after apply)
+      + port                                  = 3306
+      + publicly_accessible                   = false
+      + replicas                              = (known after apply)
+      + replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+      + resource_id                           = (known after apply)
+      + skip_final_snapshot                   = false
+      + status                                = (known after apply)
+      + storage_type                          = "gp2"
+      + timezone                              = (known after apply)
+      + username                              = "admin"
+      + vpc_security_group_ids                = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+This plan was saved to: newreadreplicaplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "newreadreplicaplan"
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform
+Usage: terraform [-version] [-help] <command> [args]
+
+The available commands for execution are listed below.
+The most common, useful commands are shown first, followed by
+less common or more advanced commands. If you're just getting
+started with Terraform, stick with the common commands. For the
+other commands, please read the help and docs before usage.
+
+Common commands:
+    apply              Builds or changes infrastructure
+    console            Interactive console for Terraform interpolations
+    destroy            Destroy Terraform-managed infrastructure
+    env                Workspace management
+    fmt                Rewrites config files to canonical format
+    get                Download and install modules for the configuration
+    graph              Create a visual graph of Terraform resources
+    import             Import existing infrastructure into Terraform
+    init               Initialize a Terraform working directory
+    login              Obtain and save credentials for a remote host
+    logout             Remove locally-stored credentials for a remote host
+    output             Read an output from a state file
+    plan               Generate and show an execution plan
+    providers          Prints a tree of the providers used in the configuration
+    refresh            Update local state file against real resources
+    show               Inspect Terraform state or plan
+    taint              Manually mark a resource for recreation
+    untaint            Manually unmark a resource as tainted
+    validate           Validates the Terraform files
+    version            Prints the Terraform version
+    workspace          Workspace management
+
+All other commands:
+    0.12upgrade        Rewrites pre-0.12 module source code for v0.12
+    debug              Debug output management (experimental)
+    force-unlock       Manually unlock the terraform state
+    push               Obsolete command for Terraform Enterprise legacy (v1)
+    state              Advanced state management
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terrafrom apply .\newreadreplicaplan
+terrafrom : The term 'terrafrom' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ terrafrom apply .\newreadreplicaplan
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (terrafrom:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform apply .\newreadreplicaplan
+aws_db_instance.mysqlmultiazinstancereadreplica: Creating...
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [1m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [1m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [1m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [1m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [1m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [1m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [2m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [2m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [2m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [2m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [2m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [2m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [3m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [3m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [3m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [3m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [3m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [3m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [4m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [4m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [4m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [4m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [4m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [4m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [5m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [5m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [5m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [5m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [5m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [5m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [6m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [6m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [6m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [6m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [6m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [6m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [7m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [7m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [7m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [7m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [7m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [7m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [8m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [8m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [8m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [8m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [8m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [8m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [9m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [9m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [9m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [9m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [9m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [9m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [10m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [10m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [10m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [10m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [10m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [10m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [11m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [11m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [11m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [11m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [11m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [11m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [12m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [12m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [12m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [12m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [12m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [12m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [13m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [13m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [13m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [13m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [13m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [13m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [14m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [14m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [14m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [14m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [14m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [14m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [15m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [15m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [15m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [15m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [15m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [15m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [16m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [16m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [16m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [16m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [16m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [16m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [17m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [17m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [17m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [17m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [17m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [17m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [18m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [18m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [18m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [18m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [18m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [18m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [19m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [19m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [19m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [19m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [19m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [19m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [20m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [20m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [20m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [20m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [20m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [20m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [21m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [21m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [21m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [21m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [21m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [21m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [22m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [22m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [22m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [22m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [22m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [22m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [23m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [23m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [23m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [23m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [23m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [23m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [24m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [24m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [24m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [24m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [24m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [24m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [25m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [25m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [25m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [25m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [25m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [25m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [26m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [26m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [26m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [26m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [26m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [26m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [27m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [27m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [27m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [27m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [27m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [27m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [28m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [28m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [28m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [28m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [28m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [28m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [29m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [29m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [29m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [29m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [29m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [29m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [30m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [30m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [30m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [30m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [30m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [30m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [31m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [31m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [31m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [31m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [31m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [31m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [32m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [32m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [32m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [32m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [32m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [32m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [33m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [33m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [33m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still creating... [33m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Creation complete after 33m41s [id=a206498-coe-mysqlmultiazinstancereadreplica]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+The state of your infrastructure has been saved to the path
+below. This state is required to modify and destroy your
+infrastructure, so keep it safe. To inspect the complete state
+use the `terraform show` command.
+
+State path: terraform.tfstate
+
+Outputs:
+
+endpoint = a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com:3306
+secondaryarn = arn:aws:rds:ap-south-1:224599679546:db:a206498-coe-mysqlmultiazinstancereadreplica
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica>
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica>
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica>
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica>
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+Interrupt received.
+Please wait for Terraform to exit or data loss may occur.
+Gracefully shutting down...
+Two interrupts received. Exiting immediately. Note that data
+loss may have occurred.
+
+Error: operation canceled
+
+
+
+Error: rpc error: code = Unavailable desc = transport is closing
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> cloud-tool-fr login
+
+Using default region from C:\Users\u6062896\cloudtoolfr_defaults
+
+MGMT Username (MGMT\MXXXXXXX): mgmt\m6062896
+MGMT Password:
+
+Please choose the role you would like to assume:
+[  0]: arn:aws:iam::003385304990:role/Customer_ReadOnly_Role
+[  1]: arn:aws:iam::003385304990:role/customer_tr_acm_role
+[  2]: arn:aws:iam::003385304990:role/customer_tr_tag_edit_role
+[  3]: arn:aws:iam::003977924856:role/Customer_ReadOnly_Role
+[  4]: arn:aws:iam::003977924856:role/customer_tr_acm_role
+[  5]: arn:aws:iam::003977924856:role/customer_tr_tag_edit_role
+[  6]: arn:aws:iam::008954398186:role/Customer_ReadOnly_Role
+[  7]: arn:aws:iam::008954398186:role/customer_tr_acm_role
+[  8]: arn:aws:iam::008954398186:role/customer_tr_tag_edit_role
+[  9]: arn:aws:iam::104007887976:role/Customer_ReadOnly_Role
+[ 10]: arn:aws:iam::104007887976:role/customer_tr_acm_role
+[ 11]: arn:aws:iam::104007887976:role/customer_tr_tag_edit_role
+[ 12]: arn:aws:iam::115447039350:role/Customer_ReadOnly_Role
+[ 13]: arn:aws:iam::115447039350:role/customer_tr_acm_role
+[ 14]: arn:aws:iam::115447039350:role/customer_tr_tag_edit_role
+[ 15]: arn:aws:iam::184450566042:role/Customer_ReadOnly_Role
+[ 16]: arn:aws:iam::184450566042:role/customer_tr_acm_role
+[ 17]: arn:aws:iam::184450566042:role/customer_tr_tag_edit_role
+[ 18]: arn:aws:iam::192480170148:role/Customer_ReadOnly_Role
+[ 19]: arn:aws:iam::192480170148:role/customer_tr_acm_role
+[ 20]: arn:aws:iam::192480170148:role/customer_tr_tag_edit_role
+[ 21]: arn:aws:iam::217158195230:role/Customer_ReadOnly_Role
+[ 22]: arn:aws:iam::217158195230:role/customer_tr_acm_role
+[ 23]: arn:aws:iam::217158195230:role/customer_tr_tag_edit_role
+[ 24]: arn:aws:iam::243235245419:role/Customer_ReadOnly_Role
+[ 25]: arn:aws:iam::243235245419:role/customer_tr_acm_role
+[ 26]: arn:aws:iam::243235245419:role/customer_tr_tag_edit_role
+[ 27]: arn:aws:iam::261952290908:role/Customer_ReadOnly_Role
+[ 28]: arn:aws:iam::261952290908:role/customer_tr_acm_role
+[ 29]: arn:aws:iam::261952290908:role/customer_tr_tag_edit_role
+[ 30]: arn:aws:iam::300234871130:role/Customer_ReadOnly_Role
+[ 31]: arn:aws:iam::300234871130:role/customer_tr_acm_role
+[ 32]: arn:aws:iam::300234871130:role/customer_tr_tag_edit_role
+[ 33]: arn:aws:iam::321669267301:role/Customer_ReadOnly_Role
+[ 34]: arn:aws:iam::321669267301:role/customer_tr_acm_role
+[ 35]: arn:aws:iam::321669267301:role/customer_tr_tag_edit_role
+[ 36]: arn:aws:iam::330227609852:role/Customer_ReadOnly_Role
+[ 37]: arn:aws:iam::330227609852:role/customer_tr_acm_role
+[ 38]: arn:aws:iam::330227609852:role/customer_tr_tag_edit_role
+[ 39]: arn:aws:iam::340725287140:role/Customer_ReadOnly_Role
+[ 40]: arn:aws:iam::340725287140:role/customer_tr_acm_role
+[ 41]: arn:aws:iam::340725287140:role/customer_tr_tag_edit_role
+[ 42]: arn:aws:iam::406235010725:role/Customer_ReadOnly_Role
+[ 43]: arn:aws:iam::406235010725:role/customer_tr_acm_role
+[ 44]: arn:aws:iam::406235010725:role/customer_tr_tag_edit_role
+[ 45]: arn:aws:iam::489786055067:role/Customer_ReadOnly_Role
+[ 46]: arn:aws:iam::489786055067:role/customer_tr_acm_role
+[ 47]: arn:aws:iam::489786055067:role/customer_tr_tag_edit_role
+[ 48]: arn:aws:iam::501119155552:role/Customer_ReadOnly_Role
+[ 49]: arn:aws:iam::501119155552:role/customer_tr_acm_role
+[ 50]: arn:aws:iam::501119155552:role/customer_tr_tag_edit_role
+[ 51]: arn:aws:iam::570395473198:role/Customer_ReadOnly_Role
+[ 52]: arn:aws:iam::570395473198:role/customer_tr_acm_role
+[ 53]: arn:aws:iam::570395473198:role/customer_tr_tag_edit_role
+[ 54]: arn:aws:iam::626984530538:role/Customer_ReadOnly_Role
+[ 55]: arn:aws:iam::626984530538:role/customer_tr_acm_role
+[ 56]: arn:aws:iam::626984530538:role/customer_tr_tag_edit_role
+[ 57]: arn:aws:iam::648727226388:role/Customer_ReadOnly_Role
+[ 58]: arn:aws:iam::648727226388:role/customer_tr_acm_role
+[ 59]: arn:aws:iam::648727226388:role/customer_tr_tag_edit_role
+[ 60]: arn:aws:iam::678142430771:role/Customer_ReadOnly_Role
+[ 61]: arn:aws:iam::678142430771:role/customer_tr_acm_role
+[ 62]: arn:aws:iam::678142430771:role/customer_tr_tag_edit_role
+[ 63]: arn:aws:iam::680932723449:role/Customer_ReadOnly_Role
+[ 64]: arn:aws:iam::680932723449:role/customer_tr_acm_role
+[ 65]: arn:aws:iam::680932723449:role/customer_tr_tag_edit_role
+[ 66]: arn:aws:iam::695290227745:role/Customer_ReadOnly_Role
+[ 67]: arn:aws:iam::695290227745:role/customer_tr_acm_role
+[ 68]: arn:aws:iam::695290227745:role/customer_tr_tag_edit_role
+[ 69]: arn:aws:iam::712241129152:role/Customer_ReadOnly_Role
+[ 70]: arn:aws:iam::712241129152:role/customer_tr_acm_role
+[ 71]: arn:aws:iam::712241129152:role/customer_tr_tag_edit_role
+[ 72]: arn:aws:iam::713112396884:role/Customer_ReadOnly_Role
+[ 73]: arn:aws:iam::713112396884:role/customer_tr_acm_role
+[ 74]: arn:aws:iam::713112396884:role/customer_tr_tag_edit_role
+[ 75]: arn:aws:iam::734564201250:role/Customer_ReadOnly_Role
+[ 76]: arn:aws:iam::734564201250:role/customer_tr_acm_role
+[ 77]: arn:aws:iam::734564201250:role/customer_tr_tag_edit_role
+[ 78]: arn:aws:iam::767440108047:role/Customer_ReadOnly_Role
+[ 79]: arn:aws:iam::767440108047:role/customer_tr_acm_role
+[ 80]: arn:aws:iam::767440108047:role/customer_tr_tag_edit_role
+[ 81]: arn:aws:iam::792311052870:role/Customer_ReadOnly_Role
+[ 82]: arn:aws:iam::792311052870:role/customer_tr_acm_role
+[ 83]: arn:aws:iam::792311052870:role/customer_tr_tag_edit_role
+[ 84]: arn:aws:iam::793936930182:role/Customer_ReadOnly_Role
+[ 85]: arn:aws:iam::793936930182:role/customer_tr_acm_role
+[ 86]: arn:aws:iam::793936930182:role/customer_tr_tag_edit_role
+[ 87]: arn:aws:iam::794268175483:role/Customer_ReadOnly_Role
+[ 88]: arn:aws:iam::794268175483:role/customer_tr_acm_role
+[ 89]: arn:aws:iam::794268175483:role/customer_tr_tag_edit_role
+[ 90]: arn:aws:iam::802514870113:role/Customer_ReadOnly_Role
+[ 91]: arn:aws:iam::802514870113:role/customer_tr_acm_role
+[ 92]: arn:aws:iam::802514870113:role/customer_tr_tag_edit_role
+[ 93]: arn:aws:iam::806938800372:role/Customer_ReadOnly_Role
+[ 94]: arn:aws:iam::806938800372:role/customer_tr_acm_role
+[ 95]: arn:aws:iam::806938800372:role/customer_tr_tag_edit_role
+[ 96]: arn:aws:iam::810837318106:role/Customer_ReadOnly_Role
+[ 97]: arn:aws:iam::810837318106:role/customer_tr_acm_role
+[ 98]: arn:aws:iam::810837318106:role/customer_tr_tag_edit_role
+[ 99]: arn:aws:iam::819160536339:role/Customer_ReadOnly_Role
+[100]: arn:aws:iam::819160536339:role/customer_tr_acm_role
+[101]: arn:aws:iam::819160536339:role/customer_tr_tag_edit_role
+[102]: arn:aws:iam::844135224604:role/Customer_ReadOnly_Role
+[103]: arn:aws:iam::844135224604:role/customer_tr_acm_role
+[104]: arn:aws:iam::844135224604:role/customer_tr_tag_edit_role
+[105]: arn:aws:iam::861026123833:role/Customer_ReadOnly_Role
+[106]: arn:aws:iam::861026123833:role/customer_tr_acm_role
+[107]: arn:aws:iam::861026123833:role/customer_tr_tag_edit_role
+[108]: arn:aws:iam::896730708523:role/Customer_ReadOnly_Role
+[109]: arn:aws:iam::896730708523:role/customer_tr_acm_role
+[110]: arn:aws:iam::896730708523:role/customer_tr_tag_edit_role
+[111]: arn:aws:iam::926331400020:role/Customer_ReadOnly_Role
+[112]: arn:aws:iam::926331400020:role/customer_tr_acm_role
+[113]: arn:aws:iam::926331400020:role/customer_tr_tag_edit_role
+[114]: arn:aws:iam::929307348169:role/Customer_ReadOnly_Role
+[115]: arn:aws:iam::929307348169:role/customer_tr_acm_role
+[116]: arn:aws:iam::929307348169:role/customer_tr_tag_edit_role
+[117]: arn:aws:iam::939679331353:role/Customer_ReadOnly_Role
+[118]: arn:aws:iam::939679331353:role/customer_tr_acm_role
+[119]: arn:aws:iam::939679331353:role/customer_tr_tag_edit_role
+[120]: arn:aws:iam::961814501377:role/Customer_ReadOnly_Role
+[121]: arn:aws:iam::961814501377:role/customer_tr_acm_role
+[122]: arn:aws:iam::961814501377:role/customer_tr_tag_edit_role
+[123]: arn:aws:iam::965578820099:role/Customer_ReadOnly_Role
+[124]: arn:aws:iam::965578820099:role/customer_tr_acm_role
+[125]: arn:aws:iam::965578820099:role/customer_tr_tag_edit_role
+[126]: arn:aws:iam::984681452733:role/Customer_ReadOnly_Role
+[127]: arn:aws:iam::984681452733:role/customer_tr_acm_role
+[128]: arn:aws:iam::984681452733:role/customer_tr_tag_edit_role
+[129]: dbcoe-sdlc-preprod (224599679546): human-role/206498-ReadOnly (Cloud DB COE)
+[130]: dbcoe-sdlc-preprod (224599679546): human-role/a206498-Developer (Cloud DB COE)
+[131]: ent-softbuild-sdlc-preprod (688779962684): human-role/a206339-Developer (Secure Development Platform)
+[132]: t1usage-sdlc-preprod (930925481740): human-role/a202068-Developer (T1 PLATFORMS - USAGE)
+[133]: tr-fr-preprod (608014515287): human-role/205490-ReadOnly (Eikon App DB - MongoDB in AWS)
+[134]: tr-fr-preprod (608014515287): human-role/a205490-Developer (Eikon App DB - MongoDB in AWS)
+[135]: worldcheckprivate-sdlc-prod (766156420970): human-role/a204837-Developer (Jenga)
+
+
+Role selection: 130
+
+----------------------------------------------------------------
+Your new access key pair has been stored in the AWS configuration file C:\Users\u6062896\.aws\credentials under the dbcoe-sdlc-preprod profile
+Note that it will expire at 2020-07-09 16:35:10+00:00.
+After this time you may safely rerun this script to refresh your access key pair.
+To use this credential call the AWS CLI with the --profile option (e.g. aws --profile dbcoe-sdlc-preprod ec2 describe-instances).
+----------------------------------------------------------------
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+aws_db_instance.mysqlmultiazinstancereadreplica: Refreshing state... [id=a206498-coe-mysqlmultiazinstancereadreplica]
+
+------------------------------------------------------------------------
+
+No changes. Infrastructure is up-to-date.
+
+This means that Terraform did not detect any differences between your
+configuration and real physical resources that exist. As a result, no
+actions need to be performed.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform destroy
+aws_db_instance.mysqlmultiazinstancereadreplica: Refreshing state... [id=a206498-coe-mysqlmultiazinstancereadreplica]
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be destroyed
+  - resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+      - address                               = "a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com" -> null
+      - allocated_storage                     = 20 -> null
+      - arn                                   = "arn:aws:rds:ap-south-1:224599679546:db:a206498-coe-mysqlmultiazinstancereadreplica" -> null
+      - auto_minor_version_upgrade            = true -> null
+      - availability_zone                     = "ap-south-1c" -> null
+      - backup_retention_period               = 2 -> null
+      - backup_window                         = "13:20-18:20" -> null
+      - ca_cert_identifier                    = "rds-ca-2019" -> null
+      - copy_tags_to_snapshot                 = false -> null
+      - db_subnet_group_name                  = "default" -> null
+      - delete_automated_backups              = true -> null
+      - deletion_protection                   = false -> null
+      - enabled_cloudwatch_logs_exports       = [] -> null
+      - endpoint                              = "a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com:3306" -> null
+      - engine                                = "mysql" -> null
+      - engine_version                        = "5.7.26" -> null
+      - hosted_zone_id                        = "Z2VFMSZA74J7XZ" -> null
+      - iam_database_authentication_enabled   = false -> null
+      - id                                    = "a206498-coe-mysqlmultiazinstancereadreplica" -> null
+      - identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica" -> null
+      - instance_class                        = "db.m5.xlarge" -> null
+      - iops                                  = 0 -> null
+      - license_model                         = "general-public-license" -> null
+      - maintenance_window                    = "wed:22:30-wed:23:00" -> null
+      - max_allocated_storage                 = 0 -> null
+      - monitoring_interval                   = 0 -> null
+      - multi_az                              = true -> null
+      - name                                  = "mydb" -> null
+      - option_group_name                     = "default:mysql-5-7" -> null
+      - parameter_group_name                  = "default.mysql5.7" -> null
+      - password                              = (sensitive value)
+      - performance_insights_enabled          = false -> null
+      - performance_insights_retention_period = 0 -> null
+      - port                                  = 3306 -> null
+      - publicly_accessible                   = false -> null
+      - replicas                              = [] -> null
+      - replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance" -> null
+      - resource_id                           = "db-H4KBYWHYNLM3OR3OJRYVR5DIQA" -> null
+      - security_group_names                  = [] -> null
+      - skip_final_snapshot                   = false -> null
+      - status                                = "available" -> null
+      - storage_encrypted                     = false -> null
+      - storage_type                          = "gp2" -> null
+      - tags                                  = {} -> null
+      - username                              = "admin" -> null
+      - vpc_security_group_ids                = [
+          - "sg-fe17de9b",
+        ] -> null
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_db_instance.mysqlmultiazinstancereadreplica: Destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica]
+
+Error: DB Instance FinalSnapshotIdentifier is required when a final snapshot is required
+
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform plan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+aws_db_instance.mysqlmultiazinstancereadreplica: Refreshing state... [id=a206498-coe-mysqlmultiazinstancereadreplica]
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be updated in-place
+  ~ resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+        address                               = "a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com"
+        allocated_storage                     = 20
+        arn                                   = "arn:aws:rds:ap-south-1:224599679546:db:a206498-coe-mysqlmultiazinstancereadreplica"
+        auto_minor_version_upgrade            = true
+        availability_zone                     = "ap-south-1c"
+        backup_retention_period               = 2
+        backup_window                         = "13:20-18:20"
+        ca_cert_identifier                    = "rds-ca-2019"
+        copy_tags_to_snapshot                 = false
+        db_subnet_group_name                  = "default"
+        delete_automated_backups              = true
+        deletion_protection                   = false
+        enabled_cloudwatch_logs_exports       = []
+        endpoint                              = "a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com:3306"
+        engine                                = "mysql"
+        engine_version                        = "5.7.26"
+        hosted_zone_id                        = "Z2VFMSZA74J7XZ"
+        iam_database_authentication_enabled   = false
+        id                                    = "a206498-coe-mysqlmultiazinstancereadreplica"
+        identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica"
+        instance_class                        = "db.m5.xlarge"
+        iops                                  = 0
+        license_model                         = "general-public-license"
+        maintenance_window                    = "wed:22:30-wed:23:00"
+        max_allocated_storage                 = 0
+        monitoring_interval                   = 0
+        multi_az                              = true
+        name                                  = "mydb"
+        option_group_name                     = "default:mysql-5-7"
+        parameter_group_name                  = "default.mysql5.7"
+        password                              = (sensitive value)
+        performance_insights_enabled          = false
+        performance_insights_retention_period = 0
+        port                                  = 3306
+        publicly_accessible                   = false
+        replicas                              = []
+        replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+        resource_id                           = "db-H4KBYWHYNLM3OR3OJRYVR5DIQA"
+        security_group_names                  = []
+      ~ skip_final_snapshot                   = false -> true
+        status                                = "available"
+        storage_encrypted                     = false
+        storage_type                          = "gp2"
+        tags                                  = {}
+        username                              = "admin"
+        vpc_security_group_ids                = [
+            "sg-fe17de9b",
+        ]
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+Note: You didn't specify an "-out" parameter to save this plan, so Terraform
+can't guarantee that exactly these actions will be performed if
+"terraform apply" is subsequently run.
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform apply
+aws_db_instance.mysqlmultiazinstancereadreplica: Refreshing state... [id=a206498-coe-mysqlmultiazinstancereadreplica]
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be updated in-place
+  ~ resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+        address                               = "a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com"
+        allocated_storage                     = 20
+        arn                                   = "arn:aws:rds:ap-south-1:224599679546:db:a206498-coe-mysqlmultiazinstancereadreplica"
+        auto_minor_version_upgrade            = true
+        availability_zone                     = "ap-south-1c"
+        backup_retention_period               = 2
+        backup_window                         = "13:20-18:20"
+        ca_cert_identifier                    = "rds-ca-2019"
+        copy_tags_to_snapshot                 = false
+        db_subnet_group_name                  = "default"
+        delete_automated_backups              = true
+        deletion_protection                   = false
+        enabled_cloudwatch_logs_exports       = []
+        endpoint                              = "a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com:3306"
+        engine                                = "mysql"
+        engine_version                        = "5.7.26"
+        hosted_zone_id                        = "Z2VFMSZA74J7XZ"
+        iam_database_authentication_enabled   = false
+        id                                    = "a206498-coe-mysqlmultiazinstancereadreplica"
+        identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica"
+        instance_class                        = "db.m5.xlarge"
+        iops                                  = 0
+        license_model                         = "general-public-license"
+        maintenance_window                    = "wed:22:30-wed:23:00"
+        max_allocated_storage                 = 0
+        monitoring_interval                   = 0
+        multi_az                              = true
+        name                                  = "mydb"
+        option_group_name                     = "default:mysql-5-7"
+        parameter_group_name                  = "default.mysql5.7"
+        password                              = (sensitive value)
+        performance_insights_enabled          = false
+        performance_insights_retention_period = 0
+        port                                  = 3306
+        publicly_accessible                   = false
+        replicas                              = []
+        replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+        resource_id                           = "db-H4KBYWHYNLM3OR3OJRYVR5DIQA"
+        security_group_names                  = []
+      ~ skip_final_snapshot                   = false -> true
+        status                                = "available"
+        storage_encrypted                     = false
+        storage_type                          = "gp2"
+        tags                                  = {}
+        username                              = "admin"
+        vpc_security_group_ids                = [
+            "sg-fe17de9b",
+        ]
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+aws_db_instance.mysqlmultiazinstancereadreplica: Modifying... [id=a206498-coe-mysqlmultiazinstancereadreplica]
+aws_db_instance.mysqlmultiazinstancereadreplica: Modifications complete after 5s [id=a206498-coe-mysqlmultiazinstancereadreplica]
+
+Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
+
+Outputs:
+
+endpoint = a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com:3306
+secondaryarn = arn:aws:rds:ap-south-1:224599679546:db:a206498-coe-mysqlmultiazinstancereadreplica
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> terraform destroy
+aws_db_instance.mysqlmultiazinstancereadreplica: Refreshing state... [id=a206498-coe-mysqlmultiazinstancereadreplica]
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstancereadreplica will be destroyed
+  - resource "aws_db_instance" "mysqlmultiazinstancereadreplica" {
+      - address                               = "a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com" -> null
+      - allocated_storage                     = 20 -> null
+      - arn                                   = "arn:aws:rds:ap-south-1:224599679546:db:a206498-coe-mysqlmultiazinstancereadreplica" -> null
+      - auto_minor_version_upgrade            = true -> null
+      - availability_zone                     = "ap-south-1c" -> null
+      - backup_retention_period               = 2 -> null
+      - backup_window                         = "13:20-18:20" -> null
+      - ca_cert_identifier                    = "rds-ca-2019" -> null
+      - copy_tags_to_snapshot                 = false -> null
+      - db_subnet_group_name                  = "default" -> null
+      - delete_automated_backups              = true -> null
+      - deletion_protection                   = false -> null
+      - enabled_cloudwatch_logs_exports       = [] -> null
+      - endpoint                              = "a206498-coe-mysqlmultiazinstancereadreplica.civdxmlgz3uc.ap-south-1.rds.amazonaws.com:3306" -> null
+      - engine                                = "mysql" -> null
+      - engine_version                        = "5.7.26" -> null
+      - hosted_zone_id                        = "Z2VFMSZA74J7XZ" -> null
+      - iam_database_authentication_enabled   = false -> null
+      - id                                    = "a206498-coe-mysqlmultiazinstancereadreplica" -> null
+      - identifier                            = "a206498-coe-mysqlmultiazinstancereadreplica" -> null
+      - instance_class                        = "db.m5.xlarge" -> null
+      - iops                                  = 0 -> null
+      - license_model                         = "general-public-license" -> null
+      - maintenance_window                    = "wed:22:30-wed:23:00" -> null
+      - max_allocated_storage                 = 0 -> null
+      - monitoring_interval                   = 0 -> null
+      - multi_az                              = true -> null
+      - name                                  = "mydb" -> null
+      - option_group_name                     = "default:mysql-5-7" -> null
+      - parameter_group_name                  = "default.mysql5.7" -> null
+      - password                              = (sensitive value)
+      - performance_insights_enabled          = false -> null
+      - performance_insights_retention_period = 0 -> null
+      - port                                  = 3306 -> null
+      - publicly_accessible                   = false -> null
+      - replicas                              = [] -> null
+      - replicate_source_db                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance" -> null
+      - resource_id                           = "db-H4KBYWHYNLM3OR3OJRYVR5DIQA" -> null
+      - security_group_names                  = [] -> null
+      - skip_final_snapshot                   = true -> null
+      - status                                = "available" -> null
+      - storage_encrypted                     = false -> null
+      - storage_type                          = "gp2" -> null
+      - tags                                  = {} -> null
+      - username                              = "admin" -> null
+      - vpc_security_group_ids                = [
+          - "sg-fe17de9b",
+        ] -> null
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_db_instance.mysqlmultiazinstancereadreplica: Destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 1m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 1m10s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 1m20s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 1m30s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 1m40s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 1m50s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 2m0s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 2m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 2m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 2m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 2m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 2m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 3m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 3m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 3m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 3m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 3m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 3m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 4m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 4m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 4m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 4m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 4m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 4m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 5m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 5m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 5m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 5m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 5m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 5m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 6m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 6m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 6m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 6m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 6m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 6m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 7m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 7m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 7m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 7m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 7m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 7m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 8m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 8m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 8m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 8m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 8m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 8m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 9m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 9m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 9m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 9m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 9m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 9m51s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 10m1s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 10m11s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 10m21s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 10m31s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Still destroying... [id=a206498-coe-mysqlmultiazinstancereadreplica, 10m41s elapsed]
+aws_db_instance.mysqlmultiazinstancereadreplica: Destruction complete after 10m43s
+
+Destroy complete! Resources: 1 destroyed.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz-readreplica> cd..
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform> cd .\tf-mysql-multiaz\
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.aws: version = "~> 2.69"
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform plan
+Refreshing Terraform state in-memory prior to plan...
+The refreshed state will be used to calculate this plan, but will not be
+persisted to local or remote state storage.
+
+aws_db_instance.mysqlmultiazinstance: Refreshing state... [id=a206498-coe-mysqlmultiazinstance]
+
+------------------------------------------------------------------------
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be updated in-place
+  ~ resource "aws_db_instance" "mysqlmultiazinstance" {
+        address                               = "a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com"
+        allocated_storage                     = 20
+        arn                                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+        auto_minor_version_upgrade            = true
+        availability_zone                     = "eu-west-1a"
+        backup_retention_period               = 2
+        backup_window                         = "13:20-18:20"
+        ca_cert_identifier                    = "rds-ca-2019"
+        copy_tags_to_snapshot                 = false
+        db_subnet_group_name                  = "default"
+        delete_automated_backups              = true
+        deletion_protection                   = false
+        enabled_cloudwatch_logs_exports       = []
+        endpoint                              = "a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com:3306"
+        engine                                = "mysql"
+        engine_version                        = "5.7.26"
+        hosted_zone_id                        = "Z29XKXDKYMONMX"
+        iam_database_authentication_enabled   = false
+        id                                    = "a206498-coe-mysqlmultiazinstance"
+        identifier                            = "a206498-coe-mysqlmultiazinstance"
+        instance_class                        = "db.m5.xlarge"
+        iops                                  = 0
+        license_model                         = "general-public-license"
+        maintenance_window                    = "wed:22:30-wed:23:00"
+        max_allocated_storage                 = 0
+        monitoring_interval                   = 0
+        multi_az                              = true
+        name                                  = "mydb"
+        option_group_name                     = "default:mysql-5-7"
+        parameter_group_name                  = "default.mysql5.7"
+        password                              = (sensitive value)
+        performance_insights_enabled          = false
+        performance_insights_retention_period = 0
+        port                                  = 3306
+        publicly_accessible                   = false
+        replicas                              = []
+        resource_id                           = "db-P54LXMQXRUQGFLXQCCSCIEOA7Q"
+        security_group_names                  = []
+      ~ skip_final_snapshot                   = false -> true
+        status                                = "available"
+        storage_encrypted                     = false
+        storage_type                          = "gp2"
+        tags                                  = {}
+        username                              = "admin"
+        vpc_security_group_ids                = [
+            "sg-ecc895ac",
+        ]
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
+
+------------------------------------------------------------------------
+
+Note: You didn't specify an "-out" parameter to save this plan, so Terraform
+can't guarantee that exactly these actions will be performed if
+"terraform apply" is subsequently run.
+
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform apply
+aws_db_instance.mysqlmultiazinstance: Refreshing state... [id=a206498-coe-mysqlmultiazinstance]
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  ~ update in-place
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be updated in-place
+  ~ resource "aws_db_instance" "mysqlmultiazinstance" {
+        address                               = "a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com"
+        allocated_storage                     = 20
+        arn                                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance"
+        auto_minor_version_upgrade            = true
+        availability_zone                     = "eu-west-1a"
+        backup_retention_period               = 2
+        backup_window                         = "13:20-18:20"
+        ca_cert_identifier                    = "rds-ca-2019"
+        copy_tags_to_snapshot                 = false
+        db_subnet_group_name                  = "default"
+        delete_automated_backups              = true
+        deletion_protection                   = false
+        enabled_cloudwatch_logs_exports       = []
+        endpoint                              = "a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com:3306"
+        engine                                = "mysql"
+        engine_version                        = "5.7.26"
+        hosted_zone_id                        = "Z29XKXDKYMONMX"
+        iam_database_authentication_enabled   = false
+        id                                    = "a206498-coe-mysqlmultiazinstance"
+        identifier                            = "a206498-coe-mysqlmultiazinstance"
+        instance_class                        = "db.m5.xlarge"
+        iops                                  = 0
+        license_model                         = "general-public-license"
+        maintenance_window                    = "wed:22:30-wed:23:00"
+        max_allocated_storage                 = 0
+        monitoring_interval                   = 0
+        multi_az                              = true
+        name                                  = "mydb"
+        option_group_name                     = "default:mysql-5-7"
+        parameter_group_name                  = "default.mysql5.7"
+        password                              = (sensitive value)
+        performance_insights_enabled          = false
+        performance_insights_retention_period = 0
+        port                                  = 3306
+        publicly_accessible                   = false
+        replicas                              = []
+        resource_id                           = "db-P54LXMQXRUQGFLXQCCSCIEOA7Q"
+        security_group_names                  = []
+      ~ skip_final_snapshot                   = false -> true
+        status                                = "available"
+        storage_encrypted                     = false
+        storage_type                          = "gp2"
+        tags                                  = {}
+        username                              = "admin"
+        vpc_security_group_ids                = [
+            "sg-ecc895ac",
+        ]
+    }
+
+Plan: 0 to add, 1 to change, 0 to destroy.
+
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+
+  Enter a value: yes
+
+aws_db_instance.mysqlmultiazinstance: Modifying... [id=a206498-coe-mysqlmultiazinstance]
+aws_db_instance.mysqlmultiazinstance: Modifications complete after 4s [id=a206498-coe-mysqlmultiazinstance]
+
+Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
+
+Outputs:
+
+endpoint = a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com:3306
+secondaryarn = arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz> terraform destroy
+aws_db_instance.mysqlmultiazinstance: Refreshing state... [id=a206498-coe-mysqlmultiazinstance]
+
+An execution plan has been generated and is shown below.
+Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_db_instance.mysqlmultiazinstance will be destroyed
+  - resource "aws_db_instance" "mysqlmultiazinstance" {
+      - address                               = "a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com" -> null
+      - allocated_storage                     = 20 -> null
+      - arn                                   = "arn:aws:rds:eu-west-1:224599679546:db:a206498-coe-mysqlmultiazinstance" -> null
+      - auto_minor_version_upgrade            = true -> null
+      - availability_zone                     = "eu-west-1a" -> null
+      - backup_retention_period               = 2 -> null
+      - backup_window                         = "13:20-18:20" -> null
+      - ca_cert_identifier                    = "rds-ca-2019" -> null
+      - copy_tags_to_snapshot                 = false -> null
+      - db_subnet_group_name                  = "default" -> null
+      - delete_automated_backups              = true -> null
+      - deletion_protection                   = false -> null
+      - enabled_cloudwatch_logs_exports       = [] -> null
+      - endpoint                              = "a206498-coe-mysqlmultiazinstance.c24hb8lpyadj.eu-west-1.rds.amazonaws.com:3306" -> null
+      - engine                                = "mysql" -> null
+      - engine_version                        = "5.7.26" -> null
+      - hosted_zone_id                        = "Z29XKXDKYMONMX" -> null
+      - iam_database_authentication_enabled   = false -> null
+      - id                                    = "a206498-coe-mysqlmultiazinstance" -> null
+      - identifier                            = "a206498-coe-mysqlmultiazinstance" -> null
+      - instance_class                        = "db.m5.xlarge" -> null
+      - iops                                  = 0 -> null
+      - license_model                         = "general-public-license" -> null
+      - maintenance_window                    = "wed:22:30-wed:23:00" -> null
+      - max_allocated_storage                 = 0 -> null
+      - monitoring_interval                   = 0 -> null
+      - multi_az                              = true -> null
+      - name                                  = "mydb" -> null
+      - option_group_name                     = "default:mysql-5-7" -> null
+      - parameter_group_name                  = "default.mysql5.7" -> null
+      - password                              = (sensitive value)
+      - performance_insights_enabled          = false -> null
+      - performance_insights_retention_period = 0 -> null
+      - port                                  = 3306 -> null
+      - publicly_accessible                   = false -> null
+      - replicas                              = [] -> null
+      - resource_id                           = "db-P54LXMQXRUQGFLXQCCSCIEOA7Q" -> null
+      - security_group_names                  = [] -> null
+      - skip_final_snapshot                   = true -> null
+      - status                                = "available" -> null
+      - storage_encrypted                     = false -> null
+      - storage_type                          = "gp2" -> null
+      - tags                                  = {} -> null
+      - username                              = "admin" -> null
+      - vpc_security_group_ids                = [
+          - "sg-ecc895ac",
+        ] -> null
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_db_instance.mysqlmultiazinstance: Destroying... [id=a206498-coe-mysqlmultiazinstance]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 10s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 20s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 30s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 40s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 50s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 1m0s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 1m10s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 1m20s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 1m30s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 1m40s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 1m50s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 2m0s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 2m10s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 2m20s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 2m30s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 2m40s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 2m50s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 3m0s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 3m10s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 3m20s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 3m30s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 3m40s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 3m50s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 4m0s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 4m10s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 4m20s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 4m31s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 4m41s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 4m51s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 5m1s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 5m11s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 5m21s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 5m31s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 5m41s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 5m51s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 6m1s elapsed]
+aws_db_instance.mysqlmultiazinstance: Still destroying... [id=a206498-coe-mysqlmultiazinstance, 6m11s elapsed]
+aws_db_instance.mysqlmultiazinstance: Destruction complete after 6m19s
+
+Destroy complete! Resources: 1 destroyed.
+PS C:\Users\u6062896\Desktop\Projects\Cloud\Terraform\tf-mysql-multiaz>
